@@ -1,0 +1,72 @@
+2026-03-06 16:06:12,459  [INFO]  Input HTML : /home/claude/HTML_to_APK_Converter/input_project/index.html
+2026-03-06 16:06:12,459  [INFO]  Package    : com.bala.generatedapp
+2026-03-06 16:06:12,459  [INFO]  App Name   : MyWebApp
+2026-03-06 16:06:12,459  [INFO]  
+2026-03-06 16:06:12,459  [INFO]  ━━━ STEP 1: Analyzing HTML file ━━━
+2026-03-06 16:06:12,461  [INFO]  Detected features:
+2026-03-06 16:06:12,462  [INFO]     internet                no
+2026-03-06 16:06:12,462  [INFO]     images                  no
+2026-03-06 16:06:12,462  [INFO]     iframe                  no
+2026-03-06 16:06:12,462  [INFO]     external_links          no
+2026-03-06 16:06:12,462  [INFO]     local_storage        ✅ YES
+2026-03-06 16:06:12,462  [INFO]     drag_drop            ✅ YES
+2026-03-06 16:06:12,462  [INFO]     file_chooser         ✅ YES
+2026-03-06 16:06:12,462  [INFO]     media                   no
+2026-03-06 16:06:12,462  [INFO]     dark_mode            ✅ YES
+2026-03-06 16:06:12,462  [INFO]     external_urls: 0 found
+2026-03-06 16:06:12,462  [INFO]     scripts:       0 external scripts
+2026-03-06 16:06:12,462  [INFO]  ━━━ STEP 3: Building Android project structure ━━━
+2026-03-06 16:06:12,465  [DEBUG]     Created: build/android_project/app/src/main/java/com/santhosh/generatedapp
+2026-03-06 16:06:12,466  [DEBUG]     Created: build/android_project/app/src/main/res/layout
+2026-03-06 16:06:12,466  [DEBUG]     Created: build/android_project/app/src/main/res/values
+2026-03-06 16:06:12,466  [DEBUG]     Created: build/android_project/app/src/main/res/xml
+2026-03-06 16:06:12,467  [DEBUG]     Created: build/android_project/app/src/main/res/mipmap-hdpi
+2026-03-06 16:06:12,467  [DEBUG]     Created: build/android_project/app/src/main/res/mipmap-mdpi
+2026-03-06 16:06:12,467  [DEBUG]     Created: build/android_project/app/src/main/res/mipmap-xhdpi
+2026-03-06 16:06:12,467  [DEBUG]     Created: build/android_project/app/src/main/res/mipmap-xxhdpi
+2026-03-06 16:06:12,468  [DEBUG]     Created: build/android_project/app/src/main/res/mipmap-xxxhdpi
+2026-03-06 16:06:12,468  [DEBUG]     Created: build/android_project/app/src/main/assets
+2026-03-06 16:06:12,468  [DEBUG]     Created: build/android_project/gradle/wrapper
+2026-03-06 16:06:12,469  [DEBUG]     Wrote: MainActivity.java
+2026-03-06 16:06:12,469  [DEBUG]     Wrote: AndroidManifest.xml
+2026-03-06 16:06:12,470  [DEBUG]     Wrote: activity_main.xml
+2026-03-06 16:06:12,470  [DEBUG]     Wrote: styles.xml
+2026-03-06 16:06:12,471  [DEBUG]     Wrote: colors.xml
+2026-03-06 16:06:12,471  [DEBUG]     Wrote: build.gradle
+2026-03-06 16:06:12,472  [DEBUG]     Wrote: settings.gradle
+2026-03-06 16:06:12,472  [DEBUG]     Wrote: build.gradle
+2026-03-06 16:06:12,472  [DEBUG]     Wrote: gradle.properties
+2026-03-06 16:06:12,473  [DEBUG]     Wrote: proguard-rules.pro
+2026-03-06 16:06:12,473  [DEBUG]     Wrote: gradle-wrapper.properties
+2026-03-06 16:06:12,474  [DEBUG]     Wrote: gradlew.bat
+2026-03-06 16:06:12,476  [INFO]     Copied HTML → assets/index.html
+2026-03-06 16:06:12,476  [INFO]     Android project structure created ✅
+2026-03-06 16:06:12,476  [INFO]  ━━━ STEP 4: Compiling APK ━━━
+2026-03-06 16:06:12,477  [WARNING]     ⚠️  Android SDK not found automatically.
+2026-03-06 16:06:12,478  [WARNING]     Please set ANDROID_HOME environment variable or install Android Studio.
+2026-03-06 16:06:12,478  [WARNING]     Skipping Gradle build — project files are ready in /build/android_project
+2026-03-06 16:06:12,478  [INFO]     You can open the project in Android Studio and build from there.
+2026-03-06 16:06:12,478  [INFO]  
+2026-03-06 16:06:12,478  [INFO]  ══════════════════════════════════════════════════════════════
+2026-03-06 16:06:12,478  [INFO]    BUILD SUMMARY
+2026-03-06 16:06:12,479  [INFO]  ══════════════════════════════════════════════════════════════
+2026-03-06 16:06:12,479  [INFO]    HTML analyzed   : /home/claude/HTML_to_APK_Converter/input_project/index.html
+2026-03-06 16:06:12,479  [INFO]    Android project : /home/claude/HTML_to_APK_Converter/build/android_project
+2026-03-06 16:06:12,479  [INFO]    Package name    : com.gowtham.generatedapp
+2026-03-06 16:06:12,480  [INFO]    App name        : MyWebApp
+2026-03-06 16:06:12,480  [INFO]    SDK target      : API 34
+2026-03-06 16:06:12,480  [INFO]  
+2026-03-06 16:06:12,480  [INFO]    Detected capabilities:
+2026-03-06 16:06:12,480  [INFO]      ✅ local_storage
+2026-03-06 16:06:12,480  [INFO]      ✅ drag_drop
+2026-03-06 16:06:12,480  [INFO]      ✅ file_chooser
+2026-03-06 16:06:12,481  [INFO]      ✅ dark_mode
+2026-03-06 16:06:12,481  [INFO]  
+2026-03-06 16:06:12,481  [INFO]    Project ready for Android Studio:
+2026-03-06 16:06:12,481  [INFO]      Open folder: /home/claude/HTML_to_APK_Converter/build/android_project
+2026-03-06 16:06:12,481  [INFO]      Then: Build > Build Bundle(s)/APK(s) > Build APK(s)
+2026-03-06 16:06:12,481  [INFO]  
+2026-03-06 16:06:12,481  [INFO]    Build log: /home/claude/HTML_to_APK_Converter/logs/build_20260306_160612.log
+2026-03-06 16:06:12,481  [INFO]  ══════════════════════════════════════════════════════════════
+2026-03-06 16:06:12,482  [INFO]    Developed by BALAVIGNESH A
+2026-03-06 16:06:12,482  [INFO]  ══════════════════════════════════════════════════════════════
