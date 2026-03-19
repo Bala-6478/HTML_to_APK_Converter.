@@ -2,7 +2,7 @@
 ### Developed by BALAVIGNESH A
    
 Convert any single-file HTML project into an installable Android APK — no Android Studio required for most tasks.
-
+  
 ---
 
 ## 📋 Requirements
