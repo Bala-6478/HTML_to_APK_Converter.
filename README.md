@@ -1,8 +1,8 @@
 # HTML → APK Builder
-### Developed by BALAVIGNESH A
-   
+**Developed by BEST_TEAM**
+
 Convert any single-file HTML project into an installable Android APK — no Android Studio required for most tasks.
-   
+
 ---
 
 ## 📋 Requirements
@@ -46,8 +46,8 @@ Convert any single-file HTML project into an installable Android APK — no Andr
 index.html
     │
     ▼
-[HTML Analyzer]          Detects: internet, localStorage, drag-drop,
-                         iframe, file-picker, media, dark mode
+[HTML Analyser]          Detects: internet, localStorage, drag-drop,
+                         iframe, file-picker, media, dark mode, geolocation
     │
     ▼
 [Android Project         Generates full Gradle project with:
@@ -97,34 +97,37 @@ HTML_to_APK_Converter/
 
 ---
 
-## 🌐 HTML Features Supported
+## 🌐 HTML Features Auto-Detected
 
-| HTML Feature | Android Behavior |
+| HTML Feature | Android Behaviour |
 |---|---|
 | Internal CSS | Rendered by WebView |
 | Internal JavaScript | Fully enabled |
 | `localStorage` / `sessionStorage` | Persists inside APK |
-| External URLs (`fetch`, CDN scripts) | Requires `INTERNET` permission (auto-added) |
+| External URLs (`fetch`, CDN scripts) | INTERNET permission auto-added |
 | `<iframe>` | Allowed in WebView |
 | Drag & Drop | WebChromeClient + FileChooser enabled |
 | `<input type="file">` | Android file picker opens |
 | `<video>` / `<audio>` | Autoplay enabled |
+| `navigator.geolocation` | Location permission auto-added |
+| `getUserMedia` | Camera + Microphone permissions auto-added |
 | Dark Mode (`prefers-color-scheme`) | Follows system theme |
 | `data-theme` attribute | Preserved via JS |
+| WebRTC | INTERNET permission + enabled |
 
 ---
 
-## 🔧 Customization
+## 🔧 Customisation
 
-Edit the top of `converter.py` to change:
+Edit the top section of `converter.py`:
 
 ```python
-APP_NAME     = "MyWebApp"          # App label shown on device
-PACKAGE_NAME = "com.bala.generatedapp"   # Unique app ID
+APP_NAME     = "MyWebApp"                  # App label shown on device
+PACKAGE_NAME = "com.bestteam.generatedapp" # Unique app ID
 VERSION_CODE = 1
 VERSION_NAME = "1.0"
-MIN_SDK      = 21                  # Android 5.0+
-TARGET_SDK   = 34                  # Android 14
+MIN_SDK      = 21                          # Android 5.0+
+TARGET_SDK   = 34                          # Android 14
 ```
 
 ---
@@ -132,7 +135,7 @@ TARGET_SDK   = 34                  # Android 14
 ## 🛠 Troubleshooting
 
 **"Android SDK not found"**
-→ Install Android Studio, then set the env variable:
+→ Install Android Studio, then set the environment variable:
 ```bash
 # Windows
 set ANDROID_HOME=C:\Users\YOU\AppData\Local\Android\Sdk
@@ -142,23 +145,23 @@ export ANDROID_HOME=$HOME/Android/Sdk
 ```
 
 **"Java not found"**
-→ Install [JDK 17](https://adoptium.net/) and ensure `java` is on your PATH.
+→ Install JDK 17+ and ensure `java` is on your PATH.
 
 **Build fails with Gradle error**
 → Open `build/android_project/` in Android Studio and build from there.
 
 **APK installs but HTML doesn't load**
-→ Ensure your `index.html` has no absolute file paths — use relative paths only.
+→ Ensure your `index.html` uses **relative paths only** — no absolute `file://` paths.
 
 ---
 
-## 📦 Output APK Behavior
+## 📦 Output APK Behaviour
 
 - Opens directly to your HTML page (no browser chrome)
 - Back button navigates web history, then exits
-- All JS, CSS, localStorage work identically to the browser
+- All JS, CSS, `localStorage` work identically to the browser
 - Permissions are requested automatically based on HTML features
 
 ---
 
-*Developed by BALAVIGNESH A — HTML → APK Builder*
+*Developed by BEST_TEAM — HTML → APK Builder*
