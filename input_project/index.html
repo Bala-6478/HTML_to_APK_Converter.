@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My App</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f0f4f8;
+    }
+    h1 { color: #1a73e8; }
+    p  { color: #444; }
+  </style>
+</head>
+<body>
+  <h1>Hello from HTML → APK!</h1>
+  <p>Replace this file with your own <strong>index.html</strong>.</p>
+  <p id="ts"></p>
+  <script>
+    document.getElementById('ts').textContent =
+      'Loaded at ' + new Date().toLocaleTimeString();
+  </script>
+</body>
+</html>
